@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: snow;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-color{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.pages{
+    width: 100%;
+    height: 100%;
+}
+
+.text-box{
+    color: snow;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.text-box-about{
+    height: 70%;
+}
+
+.list-group-item {
+background-color: transparent;
+border-radius: 0;
+color: #fff;
+}
+
+#presentation-image{
+    margin-top: 6vh;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.column-left{
+    text-align: end;
+}
+
+.experience{
+    height: 65%;
+    
+}
+
+.studies{
+    height: 50%;
+}
+
+.line{
+    width: 1.5%;
+    height: 100%;
+    background-color: snow;
+    color: snow;
+}
+
+ul{
+    list-style: none;
+}
+
+.column-right{
+    text-align: start;
+}
+
+.progress-container{
+    width: 40%;
+    height: 10%;
+}
+
+.info-text{
+    padding-left: 50%;
+    justify-content: end;
+}
+
+.presentation-header{
+    margin-top: 6vh;
+}
+
+.card-color{
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+}
+
+ul li.mail::before{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+}
+
+section#Home{
+    background: url(/assets/wallpaper1.jpg) no-repeat center center/cover;
+    scroll-snap-align: start;
+}
+
+section#About{
+    background: url(/assets/wallpaper2.jpg) no-repeat center center/cover;
+    scroll-snap-align: start;
+}
+
+section#Active{
+    background: url(/assets/wallpaper3.jpg) no-repeat center center/cover;
+    scroll-snap-align: start;
+}
+
+
+@media screen and (max-width: 800px){
+    .line{
+        width: 3%;
+    }
+    .progress-container{
+        width: 50%;
+    }
+    
+    .info-text{
+        padding-left: 7%;
+    }
+
+    .experience{
+        padding-left: 3%;
+        height: 40%;
+    }
+    
+    .studies{
+        height: 40%;
+    }
+}
